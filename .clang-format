@@ -7,3 +7,4 @@ AccessModifierOffset: -4
 PointerAlignment: Left
 ColumnLimit: 0
 Cpp11BracedListStyle: false
+AlignAfterOpenBracket: DontAlign
