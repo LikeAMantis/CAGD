@@ -1,24 +1,10 @@
+#pragma once
 #include "PointVector.hpp"
+#include "ObjData.hpp"
 #include <fstream>
 #include <iostream>
 #include <sstream>
 #include <string>
-#include <vector>
-
-struct ObjData {
-    std::vector<PointVector> vertices;
-    std::vector<int> indeces;
-
-    friend std::ostream& operator<<(std::ostream& os, const ObjData& v) {
-        for (auto& vertex : v.vertices) {
-            os << "vertex: " << vertex << '\n';
-        }
-        for (auto& index : v.indeces) {
-            os << "index: " << index << '\n';
-        }
-        return os;
-    }
-};
 
 class ObjLoader {
 public:
